@@ -297,6 +297,10 @@ if is_torch_available():
         FLAUBERT_PRETRAINED_MODEL_ARCHIVE_MAP,
     )
 
+    from .modeling_reformer import (
+        LSHSelfAttention
+    )
+
     # Optimization
     from .optimization import (
         AdamW,
