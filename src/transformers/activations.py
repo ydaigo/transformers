@@ -23,6 +23,8 @@ if torch.__version__ < "1.4.0":
 else:
     gelu = F.gelu
 
+gelu = _gelu_python
+
 
 def gelu_new(x):
     """ Implementation of the gelu activation function currently in Google Bert repo (identical to OpenAI GPT).
