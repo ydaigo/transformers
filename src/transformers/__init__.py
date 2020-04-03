@@ -299,7 +299,8 @@ if is_torch_available():
     )
 
     from .modeling_reformer import (
-        ReformerAttention
+        ReformerAttention,
+        ReformerLayer
     )
 
     # Optimization
