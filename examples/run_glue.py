@@ -30,31 +30,14 @@ from torch.utils.data.distributed import DistributedSampler
 from tqdm import tqdm, trange
 
 from transformers import (
+    MODEL_FOR_SEQUENCE_CLASSIFICATION_MAPPING,
     WEIGHTS_NAME,
     AdamW,
-    AlbertConfig,
-    AlbertForSequenceClassification,
-    AlbertTokenizer,
-    BertConfig,
-    BertForSequenceClassification,
-    # BertTokenizer,
-    BertJapaneseTokenizer, # 追加
-    DistilBertConfig,
-    DistilBertForSequenceClassification,
-    DistilBertTokenizer,
-    RobertaConfig,
-    RobertaForSequenceClassification,
-    RobertaTokenizer,
-    XLMConfig,
-    XLMForSequenceClassification,
-    XLMRobertaConfig,
-    XLMRobertaForSequenceClassification,
-    XLMRobertaTokenizer,
-    XLMTokenizer,
-    XLNetConfig,
-    XLNetForSequenceClassification,
-    XLNetTokenizer,
+    AutoConfig,
+    AutoModelForSequenceClassification,
+    AutoTokenizer,
     get_linear_schedule_with_warmup,
+    BertJapaneseTokenizer, # 追加
 )
 
 from transformers import glue_compute_metrics as compute_metrics
